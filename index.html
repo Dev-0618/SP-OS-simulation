@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split-Personality OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="login-screen">
+        <div class="login-box">
+            <img src="placeholder-logo.png" alt="OS Logo" class="login-logo"> <h1>Split-Personality OS</h1>
+            <p>Please log in</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="os-container" class="hidden">
+
+        <div id="mode-dashboard" class="active-view">
+             <div class="dashboard-content">
+                <h2>Select Operating Mode</h2>
+                <div class="mode-selection-grid">
+                    <button class="mode-button" data-mode="hacker">
+                        <span class="mode-icon">💻</span> Hacker Mode
+                    </button>
+                    <button class="mode-button" data-mode="student">
+                        <span class="mode-icon">📚</span> Student Mode
+                    </button>
+                    <button class="mode-button" data-mode="researcher">
+                        <span class="mode-icon">🔬</span> Researcher Mode
+                    </button>
+                    <button class="mode-button" data-mode="developer">
+                        <span class="mode-icon">💡</span> Developer Mode
+                    </button>
+                    <button class="mode-button" data-mode="guest">
+                        <span class="mode-icon">👤</span> Guest Mode
+                    </button>
+                    <button class="mode-button" data-mode="child">
+                        <span class="mode-icon">🧸</span> Child Mode
+                    </button>
+                </div>
+             </div>
+        </div>
+
+        <div id="mode-view-container">
+            <div class="mode-view hidden" id="mode-view-template">
+                 <h2 class="mode-title"></h2>
+                 <div class="app-grid-container">
+                    <div class="app-grid">
+                        </div>
+                 </div>
+                 <button class="change-mode-button">Change Mode</button>
+            </div>
+            
+        </div>
+
+
+        <footer id="footer-bar">
+            <div id="os-info">Split-Personality OS</div>
+            <div id="current-mode-display">Mode: Dashboard</div>
+            <div class="system-tray">
+                <span class="tray-icon">📶</span> 
+                <span class="tray-icon">🔊</span>
+                <span id="clock"></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
