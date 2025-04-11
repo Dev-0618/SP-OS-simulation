@@ -1,14 +1,24 @@
-Access this Link
-https://dev-0618.github.io/SP-OS-simulation/
+## Access the SP-OS Simulation
 
-username: _user1_
-passwd:   _securepasswd_
+Explore the Split-Personality OS simulation live at:
 
-for Guest and Child Mode
-passwd: _changepasswd_
+[https://dev-0618.github.io/SP-OS-simulation/](https://dev-0618.github.io/SP-OS-simulation/)
 
-To understand the flow and purpose
-https://dev-0618.github.io/SP-OS-flowchart/
+Use the following credentials to log in and interact with the different modes:
 
-by 
-127.4.7.8
+**Default User:**
+* Username: `_user1_`
+* Password: `_securepasswd_`
+
+**Guest Mode and Child Mode:**
+* Password: `_changepasswd_`
+
+## Understanding the Project Flow
+
+To grasp the intended flow and purpose of the SP-OS simulation, please refer to the project flowchart:
+
+[https://dev-0618.github.io/SP-OS-flowchart/](https://dev-0618.github.io/SP-OS-flowchart/)
+
+## Author
+
+This project was created by `127.4.7.8`.
